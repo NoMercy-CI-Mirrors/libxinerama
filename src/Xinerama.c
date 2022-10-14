@@ -303,7 +303,7 @@ XineramaQueryScreens(
     if ((rep.number > 0) && (rep.number <= 1024))
 	scrnInfo = Xmalloc(sizeof(XineramaScreenInfo) * rep.number);
     if (scrnInfo != NULL) {
-	int i;
+	CARD32 i;
 
 	for (i = 0; i < rep.number; i++) {
 	    xXineramaScreenInfo scratch;
