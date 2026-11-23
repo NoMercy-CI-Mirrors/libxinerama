@@ -53,6 +53,7 @@ lib = library(
   include_directories: 'include',
   dependencies: [dep_libx11, dep_libxext, dep_xextproto, dep_xineramaproto],
   version: '1.0.0',
+  darwin_versions: [ '2.0.0', '2.0.0' ],
   install: true,
 )
 dep = declare_dependency(
